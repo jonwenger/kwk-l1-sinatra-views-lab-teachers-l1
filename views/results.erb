@@ -12,7 +12,7 @@
 
 <% fortunes = ["good", "bad", "good",] %>
 <% if fortunes.sample == "bad" %>
-<h1><%= "It was a beautiful day @ KWK. Unfotunatelly for #{@name}, things weren't looking so bright... :(" %></h1>
+<h1><%= "It was a beautiful day @ KWK. Unfotunately for #{@name}, things weren't looking so bright... :(" %></h1>
 <h3>
   <% sad_gifs = ["https://media.giphy.com/media/l2JhuQU4bKHPIZbri/giphy.gif", "https://media.giphy.com/media/r2puuhrnjG7vy/giphy.gif", "https://media.giphy.com/media/3o7qDZEh8C6Tctgr8k/giphy.gif", "https://media.giphy.com/media/kYheYx5xjbkC4/giphy.gif", "https://media.giphy.com/media/3oKIPi7cfWprZMtEM8/giphy.gif", "https://media.giphy.com/media/g4IQWXcezb7X2/giphy.gif" ]%>
    <img src= <%= sad_gifs.sample %>>
@@ -24,7 +24,7 @@
 
 </h2>
 <%else %>
-<h1><%= "It was a beautiful day @ KWK. Fortunatelly for #{@name}, things were just as bright... " %></h1>
+<h1><%= "It was a beautiful day @ KWK. Fortunately for #{@name}, things were just as bright... " %></h1>
 <h3>
   <% happy = ["https://media.giphy.com/media/5GoVLqeAOo6PK/giphy.gif", "https://media.giphy.com/media/13hxeOYjoTWtK8/giphy.gif", "https://media.giphy.com/media/26xBSgDOqjPv8xT9u/giphy.gif", "https://media.giphy.com/media/DBrlP42EcC8BRtH6Vf/giphy.gif", "https://media.giphy.com/media/3ohfFGPe0RkyzokGCA/giphy.gif" ]%>
    <img src= <%= happy.sample %>>
