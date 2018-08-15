@@ -1,0 +1,42 @@
+<style>
+    body {
+      text-align: center;
+      color: #14012E;
+    }
+  
+    </style>
+    
+<body>
+  
+
+
+<% fortunes = ["good", "bad", "good", "good"] %>
+<% if fortunes.sample == "bad" %>
+<h1><%= "It was a beautiful day @ KWK. Unfotunatelly for #{@name}, things weren't looking so bright... :(" %></h1>
+<h3>
+  <% sad_gifs = ["https://media.giphy.com/media/l2JhuQU4bKHPIZbri/giphy.gif", "https://media.giphy.com/media/r2puuhrnjG7vy/giphy.gif", "https://media.giphy.com/media/3o7qDZEh8C6Tctgr8k/giphy.gif", "https://media.giphy.com/media/kYheYx5xjbkC4/giphy.gif", "https://media.giphy.com/media/3oKIPi7cfWprZMtEM8/giphy.gif", "https://media.giphy.com/media/g4IQWXcezb7X2/giphy.gif" ]%>
+   <img src= <%= sad_gifs.sample %>>
+   </h3>
+<h2> 
+<% sad_fortunes = ["accidently farting at akward times", "making code that doesn't work", "having 'cat lady' as her relationship status", "yelling in at street signs", "..... RUN!!!!! Just Run!!!! ITS' GETTING CLOSER!!!!", "blaming failed relationships on her partner and being incapable of identifying the steps YOU need to take to fix a relationship. You're not perfect, and part of the problem lies within you, but you, dear #{@name}, wont be able to admit this yourself. 'The fault, dear Brutus, is not in our stars, but in ourselves'", "blaming failed relationships on her partner and being incapable of identifying the steps YOU need to take to fix a relationship. You're not perfect, and part of the problem lies within you, but you, dear #{@name}, wont be able to admit this yourself. 'The fault, dear Brutus, is not in our stars, but in ourselves'","blaming failed relationships on her partner and being incapable of identifying the steps YOU need to take to fix a relationship. You're not perfect, and part of the problem lies within you, but you, dear #{@name}, wont be able to admit this yourself.'The fault, dear Brutus, is not in our stars, but in ourselves'", "knowing that the main difference between you and a calendar is that the calendar has dates" ] %>
+
+<%= "Poor #{@name} was destined to a life of #{sad_fortunes.sample}" %>
+
+</h2>
+<%else %>
+<h1><%= "It was a beautiful day @ KWK. Fortunatelly for #{@name}, things were just as bright... " %></h1>
+<h3>
+  <% happy = ["https://media.giphy.com/media/5GoVLqeAOo6PK/giphy.gif", "https://media.giphy.com/media/13hxeOYjoTWtK8/giphy.gif", "https://media.giphy.com/media/26xBSgDOqjPv8xT9u/giphy.gif", "https://media.giphy.com/media/DBrlP42EcC8BRtH6Vf/giphy.gif", "https://media.giphy.com/media/3ohfFGPe0RkyzokGCA/giphy.gif" ]%>
+   <img src= <%= happy.sample %>>
+   </h3>
+<h2> 
+<% happy_fortunes = [" will live a long, happy, life surrounded by puppies and kittens", " is going to star in Hamilton", " is going to start a non-profit to teach turtles how to read", " you know that guy/girl who thinks they're too good for you? Yeah? Well after high school you change the world and they still gonna live with their mom", " will realize that men are trash and will spend her 20's realizing how fabuluous she truly is"] %>
+
+<%= " #{@name} #{happy_fortunes.sample}" %>
+
+</h2>
+<% end %>
+</body>
+
+
+
